@@ -1,7 +1,24 @@
 <html>
     <body>
-        <span>teste</span>
-        <img src=http://localhost:3000/player/image>
-        <img src=http://www.mzimage.com/image.php?lang=br&design=4:FFFFFF:000000:336666:D0DBDB:&player=Juva::22:::&atts=6:7:0:0:0:0:0:0:9:0:0:0:0&mzv=false>
+        <div>
+            <span>local:</span>
+            <img id="img">
+        </div>
+        <div>
+            <span>local js:</span>
+            <img src="http://localhost:3000/player/image">
+        </div>
+        <div>
+            <span>mz-image:</span>
+            <img src=http://www.mzimage.com/image.php?lang=br&design=4:FFFFFF:000000:336666:D0DBDB:&player=:::::&atts=1:0:0:0:0:0:0:0:0:0:0:0:0&mzv=false>
+        </div>
     </body>
+    <script>
+        fetch("http://localhost:3000/player/image").then(r => {
+            r.text().then(t => {
+                console.log(t);
+                //document.getElementById('img').src = t;
+            })
+        });
+    </script>
 </html>

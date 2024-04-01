@@ -1,0 +1,14 @@
+Desenvolver os juvenis utilizando uma tática PC, porém preparando eles para uma tática JPL
+
+Treinar primeramente os atributos principais que não sejam 'H', para ver se maximiza precoce
+
+Não treinar Inteligência nos juvenis, demora muito, foca no atributos principais
+
+Buscar CT com pelo menos 2 dos 4 atributos principais
+
+Distribuição 8-8-7
+Com 8/7 juvenis
+1 Goleiro
+4/3 Zagueiro
+1 Meia/Ponta
+2 Atacante
