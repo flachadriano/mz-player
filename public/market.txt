@@ -1,0 +1,21 @@
+#Goleiro
+##  quais jogadores procurar:
+      jogador com 19 anos, comprado até a metade da temporada
+      9 de defesa a gol e somando 6 nos atributos resistência e passe longo
+      custando até 300 mil
+      sem low nos atributos velocidade e resistência
+      sem low 1 nos atributos inteligência e passe longo
+      sem não tiver low em nenhum dos atributos acima, melhor
+##  como treinar:
+      se maximizar com menos de 8-8 nos físicos, se desfazer imediatamente
+      se maximizar com 8-8 nos físicos, vender ao final da temporada de 20 anos
+      se maximizar acima de 8-8 nos físicos, treinar para vender no final da temporada de 22 anos
+##  qual valor vender:
+      se vender ao final da temporada de 20 anos:
+          2 envios para centro de treinamento: 20 salários
+          2 temporadas de salários: 26 semanas
+          + valor de compra do jogador
+
+Zagueiro: 9 de desarme e 13 somando os atributos velocidade, resistência e passe longo
+Ponta: 9 de passe longo e 13 somando os atributos velocidade, resistência e controle de bola
+Atacante: 9 de chute e 13 somando os atributos velocidade, resistência e cabeceio

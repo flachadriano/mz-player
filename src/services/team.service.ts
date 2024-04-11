@@ -5,7 +5,7 @@ import { Canva } from "src/lib/canva";
 @Injectable()
 export class TeamService {
 
-  renderStrategyImage(path: string, width: number, height: number) {
+  renderImage(path: string, width: number, height: number) {
     const posX = 10;
     let posY = 10;
     const lineHeight = 20;
@@ -15,7 +15,14 @@ export class TeamService {
     const canva = new Canva(width, height);
 
     for (let i = 0; i < lines.length; i++) {
-      canva.writeBlackText(lines[i], posX, posY += lineHeight, 14);
+      const line = lines[i]
+      if (line.startsWith('##')) {
+        canva.writeBlackText(line.substring(2), posX, posY += lineHeight, 18)
+      } else if (line.startsWith('#')) {
+        canva.writeBlackText(line.substring(1), posX, posY += lineHeight, 20)
+      } else {
+        canva.writeBlackText(line, posX, posY += lineHeight, 14);
+      }
     }
 
     return canva.canva.toBuffer();

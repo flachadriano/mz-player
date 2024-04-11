@@ -13,7 +13,7 @@ export class TeamController {
   @Header('Content-Type', 'image/png')
   async getBuyAndSellImage(@Query('w') width: string, @Query('h') height: string, @Res() res: Response): Promise<any> {
     res.set({ 'Content-Type': 'image/png' });
-    res.send(await this.teamService.renderStrategyImage('public/buy-and-sell.txt', Number(width), Number(height)))
+    res.send(await this.teamService.renderImage('public/buy-and-sell.txt', Number(width), Number(height)))
   }
 
   @ApiOperation({ summary: 'Render juniors strategy' })
@@ -21,6 +21,14 @@ export class TeamController {
   @Header('Content-Type', 'image/png')
   async getJuniorsImage(@Query('w') width: string, @Query('h') height: string, @Res() res: Response): Promise<any> {
     res.set({ 'Content-Type': 'image/png' });
-    res.send(await this.teamService.renderStrategyImage('public/juniors.txt', Number(width), Number(height)))
+    res.send(await this.teamService.renderImage('public/juniors.txt', Number(width), Number(height)))
+  }
+
+  @ApiOperation({ summary: 'Render market strategy' })
+  @Get('/market')
+  @Header('Content-Type', 'image/png')
+  async getMarketImage(@Query('w') width: string, @Query('h') height: string, @Res() res: Response): Promise<any> {
+    res.set({ 'Content-Type': 'image/png' });
+    res.send(await this.teamService.renderImage('public/market.txt', Number(width), Number(height)))
   }
 }
